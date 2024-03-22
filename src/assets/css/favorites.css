@@ -1,0 +1,133 @@
+.favorites-view {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 60px;
+  background: linear-gradient(180deg, #758bfd 0%, #f1f2f6 100%);
+}
+
+.favorites-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.favorites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.favorites-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.favorites-empty h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.favorites-empty p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.favorites-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.favorites-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  width: 250px;
+  height: 300px;
+  margin: 1rem;
+  background-color: #f1f2f6;
+  border-radius: 5px;
+}
+
+.favorites-grid-item img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.favorites-grid-item h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.favorites-grid-item p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+
+.favorites-grid-item a i {
+  font-size: 1rem;
+  color: #333;
+  transition: all 0.1s ease;
+  padding: 0.5rem;
+  border-radius: 50%;
+  text-shadow: 0 0 2px #f1f2f6;
+}
+
+.favorites-grid-item a i:hover {
+  color: #f1f2f6;
+  background-color: #333;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.remove-icon {
+  position: absolute;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #333;
+  transition: all 0.1s ease;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  text-shadow: 0 0 2px #f1f2f6;
+}
+
+.remove-icon:hover {
+  color: #f1f2f6;
+  background-color: #333;
+  border-radius: 50%;
+}

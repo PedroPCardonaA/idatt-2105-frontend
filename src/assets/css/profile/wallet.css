@@ -1,0 +1,215 @@
+.wallet-container {
+  height: 100px;
+  width: auto;
+  max-width: 800px;
+  background-color: #f1f2f6;
+  border-radius: 20px;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.wallet-container .wallet-status {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 1rem;
+}
+
+.wallet-container .wallet-status h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.wallet-container .wallet-actions {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  padding: 0 1rem;
+}
+
+.wallet-container .wallet-actions button {
+  height: 40px;
+  width: 200px;
+  background-color: #333;
+  color: #f1f2f6;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.wallet-container .wallet-actions button:hover {
+  background-color: #ff8600;
+}
+
+.wallet-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #758bfd;
+  color: #f1f2f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.wallet-popup .popup-close {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 50px;
+  width: 50px;
+  background-color: #333;
+  color: #f1f2f6;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.1s ease;
+}
+
+.wallet-popup .popup-close:hover {
+  background-color: #ff8600;
+}
+
+.wallet-popup .popup-title {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.wallet-popup .popup-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.wallet-popup .popup-input input {
+  height: 50px;
+  width: 300px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  background-color: #333;
+  color: #f1f2f6;
+  transition: all 0.1s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.wallet-popup .popup-input input:focus {
+  outline: none;
+}
+
+.wallet-popup .popup-input .popup-input-label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.wallet-popup .popup-button {
+  height: 50px;
+  width: 300px;
+  background-color: #333;
+  color: #f1f2f6;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.wallet-popup .popup-button:hover {
+  background-color: #ff8600;
+}
+
+.wallet-popup .popup-error {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f1f2f6;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.loading-overlay .loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.loading-overlay .loading-container .loading-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.loading-overlay .loading-container .loading-spinner {
+  height: 50px;
+  width: 50px;
+  border: 5px solid #758bfd;
+  border-top: 5px solid #758bfd;
+  border-radius: 50%;
+  animation: spin 1s linear infinite, fade 5s ease-in-out;
+}
+
+.loading-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #758bfd;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade {
+  0% {
+    border: 5px solid #f1f2f6;
+    border-top: 5px solid #ff8600;
+  }
+  100% {
+    border: 5px solid #758bfd;
+    border-top: 5px solid #758bfd;
+  }
+}

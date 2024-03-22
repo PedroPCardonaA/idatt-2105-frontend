@@ -1,0 +1,109 @@
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.admin-container .admin-button {
+    width: 200px;   
+    height: 50px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF8600;
+    color: #F1F2F6;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.admin-container .admin-button:hover {
+    background-color: #F1F2F6;
+    color: #FF8600;
+    text-decoration: underline;
+}
+
+.admin-container .admin-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #F1F2F6;
+    width: 100%;
+}
+
+.admin-display-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.admin-display-body-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.admin-display-body-content-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    padding: 10px;
+    background-color: #FF8600;
+    color: #F1F2F6;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.admin-display-body-content-header h4 {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+.admin-display-body-content-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 200px;
+    overflow-y: scroll;
+    width: 95%;
+    padding: 10px;
+    background-color: #4e4d4d;
+    color: #F1F2F6
+}
+
+.admin-display-body-content-body-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #F1F2F6;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.admin-display-body-content-body-row h4 {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+.admin-display-body-content-body-row:hover {
+    background-color: #FF8600;
+    color: #F1F2F6;
+}

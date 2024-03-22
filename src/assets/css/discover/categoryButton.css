@@ -1,0 +1,46 @@
+.category-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.category-button:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.category-button-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f1f2f6;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  transition: all 0.1s ease-in-out;
+}
+
+.category-button:hover .category-button-text {
+  font-size: 1.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  .category-button {
+    width: 80vw;
+    height: 150px;
+    margin: 5px;
+  }
+
+  .category-button-text {
+    font-size: 1.25rem;
+  }
+}

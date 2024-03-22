@@ -1,0 +1,261 @@
+.profile-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(180deg, #758bfd 0%, #f1f2f6 100%);
+  padding-top: 100px;
+}
+
+.profile-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.profile-username {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.profile-creation-date {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.nfts-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.nfts-empty p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.nfts-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.ntfs-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  width: 250px;
+  height: 300px;
+  margin: 1rem;
+  background-color: #f1f2f6;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nft-img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.nft-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: 333;
+}
+
+.nft-price {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+
+.nft-item-link a i {
+  font-size: 1rem;
+  color: #333;
+  transition: all 0.1s ease;
+  padding: 0.5rem;
+  border-radius: 50%;
+  text-shadow: 0 0 2px #f1f2f6;
+}
+
+.nft-item-link a i:hover {
+  color: #f1f2f6;
+  background-color: #333;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.profile-settings-btn {
+  width: 200px;
+  height: 50px;
+  background-color: #333;
+  color: #f1f2f6;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+.profile-settings-btn:hover {
+  background-color: #758bfd;
+  color: #f1f2f6;
+}
+
+.profile-settings-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.profile-settings-wrapper h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.profile-settings-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 1rem;
+}
+
+.profile-settings-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.profile-settings-column label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.profile-settings-column input {
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+  background-color: #f1f2f6;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-settings-column input:focus {
+  outline: none;
+}
+
+.profile-settings-button {
+  width: 200px;
+  height: 50px;
+  background-color: #333;
+  color: #f1f2f6;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+.profile-settings-button:hover {
+  background-color: #ff8600;
+  color: #f1f2f6;
+}
+
+.profile-settings-error {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ff0000;
+}
+
+hr {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-settings-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+  .profile-settings-row {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+  .profile-settings-column {
+    width: 100%;
+    max-width: 100%;
+  }
+  .profile-settings-button {
+    width: 100%;
+    max-width: 100%;
+  }
+  .profile-settings-error {
+    width: 100%;
+    max-width: 100%;
+  }
+  hr {
+    width: 100%;
+    max-width: 100%;
+  }
+}

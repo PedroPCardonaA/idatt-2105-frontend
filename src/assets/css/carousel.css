@@ -1,0 +1,98 @@
+.swiper {
+  width: 90%;
+  margin: 0 auto;
+  height: 400px;
+  margin-bottom: 50px;
+}
+
+.swiper-slide {
+  height: 100%;
+  margin: 0 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.swiperImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.swiperImg_overlay {
+  opacity: 0;
+  transition: all 0.3s ease;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.swiperImg__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f1f2f6;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  opacity: 0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.swiperImg__price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f1f2f6;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.swiperImg:hover .swiperImg_overlay {
+  opacity: 1;
+}
+
+.swiperImg:hover .swiperImg__title {
+  opacity: 1;
+}
+
+.swiperImg:hover .swiperImg__price {
+  opacity: 1;
+}
+
+.swiperImg__price i {
+  margin-left: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .swiper {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper {
+    width: 100%;
+    height: 200px;
+  }
+}

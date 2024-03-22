@@ -1,0 +1,38 @@
+.error-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    min-width: 200px;
+    height: 50px;
+    background-color: #FF8600;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F1F2F6;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    /* Make the error slide in when it appears, and slide out after 10 seconds */
+    animation: error-slide-in 0.2s ease-in-out, error-slide-out 0.2s ease-in-out 5s forwards;
+}
+
+@keyframes error-slide-in {
+    0% {
+        transform: translateX(250px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes error-slide-out {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(250px);
+    }
+}

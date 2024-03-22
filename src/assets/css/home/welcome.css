@@ -1,0 +1,80 @@
+.welcome {
+  width: 100%;
+  max-width: 100%;
+  height: 80vh;
+  background: linear-gradient(rgba(39, 24, 126, 0.6), rgb(241, 242, 246)), url(../../img/bg1.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.welcome .title {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.welcome .title h1 {
+  font-size: 3rem;
+  color: #f1f2f6;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.welcome .title p {
+  font-size: 1.5rem;
+  color: #f1f2f6;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.welcome .title .register {
+  font-size: 1.5rem;
+  color: #f1f2f6;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  background-color: #758bfd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.welcome .title .register:hover {
+  background-color: #f1f2f6;
+  color: #758bfd;
+}
+
+.background-fade {
+  height: 20vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgb(241, 242, 246));
+  margin-top: auto;
+  position: relative;
+  bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .welcome .title h1 {
+    font-size: 2rem;
+  }
+  .welcome .title p {
+    font-size: 1rem;
+  }
+  .welcome .title .register {
+    font-size: 1rem;
+  }
+}
